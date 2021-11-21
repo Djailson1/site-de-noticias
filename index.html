@@ -5,7 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TECHNOT</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('section#content div.btn').click(function(){
+                $(this).siblings('p.box , h3.box').slideToggle();
+                if($(this).text() == "Leia Mais"){
+                    $(this).text("Ocultar");
+                }else{
+                    $(this).text("Leia Mais");
+                }
+
+            });
+        });
+    </script>
+    
+   
 </head>
 <body>
     <!-- cabeçalho -->
@@ -43,9 +59,25 @@
             </span>
             <img src="imagens/windows.jpg" alt="imagem do windows">
             <p>
-                Neste terça-feira (9), a Microsoft liberou mais um conjunto de atualizações para todas as suas plataformas com suporte oficial. Naturalmente, o Windows 11 se destacou e recebeu uma leva de importantes correções e melhorias no pacote "KB5007215", elevando seu número de compilação para "22000.318"...
-                <a href="https://www.tecmundo.com.br/software/228432-windows-11-recebe-nova-atualizacao-obrigatoria-correcoes.htm" target="_blank">Leia mais...</a>
+                Neste terça-feira (9), a Microsoft liberou mais um conjunto de atualizações para todas as suas plataformas com suporte oficial. Naturalmente, o Windows 11 se destacou e recebeu uma leva de importantes correções e melhorias no pacote "KB5007215", elevando seu número de compilação para "22000.318".
+
+                <section id="content">
+                <div class="btn func">Leia Mais</div> 
+
+                <p class="box">Em mais detalhes, o novo pacote de correções resolve os problemas de leitura do Cache L3 em processadores AMD, um fator que prejudicava seu desempenho no Windows 11. Além disso, a novidade também previne que alguns aplicativos nativos — como o Painel de Emojis e Ferramenta de Captura — parem de funcionar inesperadamente devido a certificados expirados, um incômodo menor, mas também notado pelos usuários.</p>
+
+                <p class="box">Recapitulando, vale ressaltar que ambas as correções não são exatamente novas, já que estavam disponíveis como Prévias Técnicas no programa Windows Insider. Todavia, era necessário fazer a instalação de maneira manual, caso desejado, sendo um processo um tanto excludente para a maioria do público. Agora, em contraste, o pacote "KB5007215" é obrigatório e chega para todos os usuários automaticamente.</p>
+
+                <h3 class="box">Disponibilidade</h3>
+
+                <p class="box">O pacote de atualização "KB5007215" pode ser instalado diretamente pelo Windows Update, localizado em sua respectiva seção do aplicativo "Configurações" no Windows 11. Ao acessar essa tela, basta clicar em "Procurar Atualizações" e prosseguir para o processo de instalação, assim que disponível.</p>
+
+               </section>
+
+                <!-- <a href="https://www.tecmundo.com.br/software/228432-windows-11-recebe-nova-atualizacao-obrigatoria-correcoes.htm" target="_blank">Leia mais...</a> -->
             </p>
+
+            
         
             <!-- postagem 1-->
             
@@ -57,9 +89,78 @@
             <img src="imagens/seguranca.jpg" alt="imagem de segurança">
             
                 <p> A pandemia trouxe o distanciamento social e, com isso, novas possibilidades para o trabalho, justamente pela necessidade do remoto. Afinal, o recomendado é não estar mais no ambiente profissional e, para alguns, é possível dar continuidade em projetos pelo computador pessoal, com o auxílio da internet.</p>
-        
-                Pensando nisso, listamos algumas dicas para te ajudar a proteger seus dados:...
-            <a href="https://www.tecmundo.com.br/seguranca/223248-ciberseguranca-6-formas-proteger-dados.htm" target="_blank">Leia mais...</a>
+                
+            <section id="content">
+            <div class="btn func">Leia Mais</div>
+
+                    <p class="box">Assim como as paredes dos lares se transformaram em escritórios, essa mudança também trouxe um ponto de virada para o próprio computador, que antes, normalmente, era utilizado apenas para trabalhos pessoais ou lazer.</p>
+
+                    <p class="box">onsiderando que os limites entre profissional e pessoal, antes bem definidos, no pós-pandemia — que está chegando, mesmo que a passos lentos — devem estar mais próximos, pode ser um momento de pensar e se preocupar em como garantir sua segurança, e a dos seus dados.</p>
+    
+                    <p class="box">Afinal, com a possibilidade de trabalhar em diversos lugares, usando a conexão de diferentes redes junto a outros computadores, como se proteger de possíveis ataques digitais?</p>
+    
+                    <p class="box">Pensando nisso, listamos algumas dicas para te ajudar a proteger seus dados:</p>
+    
+                    <h3 class="box">1. Use senhas fortes</h3>
+    
+                    <p class="box">Este assunto pode parecer batido, mas muitas pessoas ainda utilizam senhas muito simples, o que é um atrativo para pessoas mal-intencionadas. Por isso, não use a mesma senha para todos os dispositivos e nem sequências simples, como ABCD ou 12345, muito menos sua data de aniversário.</p>
+    
+                    <p class="box">Para evitar ataques cibernéticos, prefira sempre senhas fortes, mais longas e com uma combinação de caracteres especiais, letras maiúsculas e minúsculas, e números. Se possível, altere suas senhas periodicamente e habilite a verificação em duas etapas em todas as contas que dão esse suporte — como o e-mail e WhatsApp, por exemplo.</p>
+    
+                    <h3 class="box">2. Utilize um gerenciador de senhas</h3>
+    
+                    <p class="box">Para ajudar no gerenciamento das suas senhas, alguns softwares podem ser utilizados junto a sensores de digitais. Para isso, os laptops precisam ter um leitor de digitais e algumas marcas, como a HP, oferecem essa tecnologia em seus dispositivos. </p>
+    
+                    <p class="box">Existem diversos gerenciadores de senhas, como 1Password, LastPass, Bitwarden, Dashlane, Keeper, entre outros. Eles ajudam a guardar sua senha de forma segura — inclusive as de cartão de crédito —, gerar senhas fortes automaticamente e alterá-las de forma simples.</p>
+    
+                    <h3 class="box">3. Cuide ao abrir links e arquivos</h3>
+    
+                    <p class="box">Tenha sempre cautela na hora de abrir arquivos e links recebidos de terceiros. Antes de abri-los, verifique se são realmente seguros, mas se não tiver certeza, não abra.</p>
+    
+                    <p class="box">Também é importante se lembrar de não instalar softwares/aplicativos que não estejam disponíveis nas lojas oficiais.</p>
+    
+                    <p class="box">Mais de 350.000 novas variantes de malware são criadas todos os dias, e se você quiser acompanhar, é melhor combater o fogo com fogo. Antivírus tradicionais nem sempre podem reconhecer novos ataques, por isso é bom contar com novas tecnologias e sistemas para aumentar sua segurança:</p>
+    
+                    <p class="box">Sure Sense: defensa inteligente contra ameaças. Esse sistema usa algoritmos de aprendizagem profunda proprietários e tecnologia de rede neural avançada para reconhecer instintivamente qualquer malware e proteger contra ataques nunca vistos.</p>
+    
+                    <p class="box">Sure View: proteja instantaneamente suas informações contra hackers visuais com a tela de privacidade integrada do HP Sure View. Com o toque de um botão, sua tela aparece ilegível para aqueles ao seu redor.</p>
+    
+                    <p class="box">Sure click: proteja seu PC de sites e anexos. O HP Sure Click é uma medida de segurança imposta por hardware que isola o malware em uma máquina virtual para impedi-lo de infectar o sistema.</p>
+    
+                    <h3 class="box">4. Tenha um equipamento com auto recuperação da BIOS</h3>
+    
+                    <p class="box">Ter um notebook com capacidade para se recuperar do zero, reinstalando o sistema operacional em caso de perda total dos dados, é um caminho importante para quem preza pela segurança.</p>
+    
+                    <p class="box">Afinal, ataques de firmware podem destruir completamente seu computador. A HP oferece essa tecnologia em suas séries de computadores, ajudando a recuperar o sistema de entrada e saída, ou somente BIOS, corrompido a partir do bloqueio de boot.</p>
+    
+                    <p class="box">Essa é a primeira e única BIOS autorreparável do mundo. Além disso, o HP Sure Start protege contra ataques LoJax e outros ataques BIOS/UEFI sofisticados.</p>
+    
+                    <h3 class="box">5. Preze por sua privacidade</h3>
+    
+                    <p class="box">Muitas pessoas colam adesivos em suas webcams com medo de estarem sendo observadas. Por isso, ter um computador com câmera de privacidade também dá um alívio para os usuários. Esse tipo de tecnologia informa, por sinal luminoso, quando o dispositivo está ativo e captando imagens.</p>
+    
+                    <p class="box">Outro componente importante pensando na privacidade são as superfícies antirreflexo das telas, garantindo a visibilidade do conteúdo apenas para quem está em frente ao equipamento.</p>
+    
+                    <p class="box">Muitos usuários colocam películas adesivas para adquirirem essa funcionalidade e, pensando nisso, a HP criou a tecnologia Sure View, que já entrega as telas com esse benefício.</p>
+    
+                    <h3 class="box">6. Compre produtos seguros</h3>
+    
+                    <p class="box">Optar por comprar equipamentos confiáveis também é essencial, por isso, sempre decida por marcas preocupadas com a segurança de seus usuários, que elaboram ferramentas nativas mais eficientes.</p>
+    
+                    <p class="box">Além das tecnologias já citadas, a HP também oferece em seus computadores o HP Sure Click, que garante um ambiente seguro intermediário para qualquer arquivo acessado no seu computador por meio de um navegador de internet, impedindo que softwares maliciosos entrem no ambiente do usuário.</p>
+    
+                    <p class="box">A marca também oferece o HP Sure Run, um mecanismo interno que age em conjunto com o sistema operacional para garantir que nenhum software malicioso esteja agindo de maneira desavisada no sistema, por rotinas de verificação que funcionam de forma independente do Windows.</p>
+    
+                    <p class="box">Por fim, as séries 600, 800 e 1000 da HP também contam com o Sure Sense, uma rotina interna no sistema operacional que, através de algoritmos de aprendizado de máquina, se atualiza constantemente para combater ameaças, entendendo o perfil do usuário e os métodos das principais ameaças.</p>
+    
+                    <p class="box">Mesmo que pareçam muitas informações e passos, contar com um produto e com ferramentas que por si só já trazem uma maior sensação de conforto e segurança ao usuário é fundamental. Afinal, a tecnologia é nossa aliada não só para trabalho e diversão, mas também para nos dar segurança.</p>
+                </section>
+                <!-- Seção ler mais e ocultar JQuery -->
+                
+
+
+
+            <!-- <a href="https://www.tecmundo.com.br/seguranca/223248-ciberseguranca-6-formas-proteger-dados.htm" target="_blank">Leia mais...</a> -->
         </p>
            
             <!-- postagem 2 -->
@@ -71,8 +172,30 @@
             <img src="imagens/cripto.jpg" alt="imagem do bitcoin">
     
             <p>Jack Dorsey, o CEO do Twitter, é conhecido por ser grande fã do universo de criptomoedas e até já revelou que uma das suas empresas está planejando criar uma carteira física para bitcoin. Agora, o Twitter anunciou que também vai contar com uma equipe focada no mundo dos criptoativos.</p>
+        
+        <section id="content">
+        <div class="btn func">Leia Mais</div>
+
+            <p class="box">A equipe Twitter Crypto, como foi nomeada, é uma divisão de excelência focada em tudo relacionado ao mundo da blockchain. De acordo com informações do Engadget, a equipe será responsável por todo o futuro do Twitter envolvendo criptomoedas.</p>
+
+            <p class="box">A líder do time é Tess Rinearson, uma profissional que já trabalhou em startups de criptoativos, como a Interchain, Tendermint e Chain — ela se juntará ao CTO do Twitter, Parag Agrawal, para tomar decisões e definir o futuro da equipe.</p>
+
+            <p class="box">“Conforme construo a equipe, estaremos trabalhando para descobrir o que as criptomoedas podem fazer pelo Twitter, bem como o que o Twitter pode fazer pelas criptomoedas", revelou Tess em seu perfil.</p>
+
+            <h3 class="box">Objetivos</h3>
+
+            <p class="box">A companhia já tem alguns objetivos com a nova equipe, e um deles é entender como as criptomoedas podem ser usadas para pagamentos de criadores de conteúdo. Outra missão é criar uma rede social totalmente descentralizada, o projeto Bluesky — basicamente, a rede social funcionaria independentemente e sem um grande conglomerado por trás, como acontece com o próprio Twitter.</p>
+
+            <p class="box">“Há um interesse enorme e crescente entre os criadores de usar aplicativos descentralizados para gerenciar bens virtuais e moedas. Tess se concentrará aqui, com um objetivo de longo prazo de explorar como as ideias da criptografia podem nos ajudar a ultrapassar os limites do que é possível com identidade, comunidade e muito mais”, o Twitter revelou em comunicado.</p>
+
+            <p class="box">Em setembro, a companhia anunciou o que os usuários da rede social poderão enviar gorjetas em Bitcoin para os criadores de conteúdo, por meio do Tip Jar.</p>
+
+        </section>
+           <!-- Seção ler mais e ocultar JQuery-->
+
+
     
-            <a href="https://www.tecmundo.com.br/redes-sociais/228598-twitter-monta-equipe-focada-criptomoedas-descentralizacao.htm" target="_blank">Leia mais...</a>
+             <!-- <a href="https://www.tecmundo.com.br/redes-sociais/228598-twitter-monta-equipe-focada-criptomoedas-descentralizacao.htm" target="_blank">Leia mais...</a> --> 
            
             <!-- postagem 3 -->
     
@@ -83,8 +206,30 @@
             <img src="imagens/painel-solar.jpg" alt="painel solar no telhado">
     
             <p>A Caixa Econômica Federal anunciou na segunda-feira (8) o lançamento de uma linha de crédito para pessoas físicas destinada ao financiamento de implantação de energia solar em residências. Chamada de CAIXA Energia Renovável, a linha de financiamento cobre não apenas a compra dos sistemas de geração de energia elétrica fotovoltaica, mas também todos os custos de instalação nas residências.</p>
+
+            <section id="content">
+            <div class="btn func">Leia Mais</div>
+                
+                <p class="box">A linha de crédito, que deverá chegar em breve às agências do banco, prevê o financiamento de até 100% do projeto (conforme a capacidade financeira do cliente) e taxas a partir de 1,17%. O prazo para pagamento vai até 60 meses, com carência de até seis meses para o vencimento da primeira prestação. O crédito pessoal será oferecido em duas modalidades: sem garantias ou com caução de aplicações financeiras de renda fixa.</p>
+
+                <p class="box">De acordo com o comunicado da Caixa, a implantação do sistema de geração de energia elétrica fotovoltaica pode representar uma redução de até 95% na conta de luz. Sem contar que a medida tem reflexos positivos na sustentabilidade e preservação do meio ambiente, com o aumento da geração de energia limpa e renovável.</p>
     
-            <a href="https://www.tecmundo.com.br/ciencia/228445-energia-solar-caixa-financiar-instalacao-paineis-residencias.htm" target="_blank">Leia mais...</a>
+                <h3 class="box">Unindo proteção ambiental à inclusão socioeconômica</h3>
+    
+                <p class="box">Nesse sentido, o presidente da instituição financeira, Pedro Guimarães, gravou um vídeo na última quarta-feira (3) para ser divulgado na Confederação das Nações Unidas sobre Mudanças Climáticas (COP26). Segundo o executivo, “A proteção do meio ambiente, em especial nos países em desenvolvimento, precisa estar aliada à inclusão social e econômica.</p>
+    
+                <p class="box">Juntamente com o CAIXA Energia Renovável, o banco público está lançando outras três linhas de crédito ligadas às energias renováveis: a MPE Ecoeficiência, destinada a pessoas jurídicas, e o Programa Sustentabilidade CAIXA para o setor agro, que prevê dois tipos de financiamento.</p>
+    
+                <p class="box">O primeiro deles, ABC (Agricultura de Baixo Carbono) tem como público-alvo os agricultores, e o Inovagro (Programa de Incentivo à Inovação Tecnológica na Produção Agropecuária do Governo Federal) busca estimular e fomentar a produção agropecuária, através do financiamento de máquinas e equipamentos.</p>
+            
+            </section>
+            <!-- Seção ler mais e ocultar JQuery-->
+ 
+           
+
+
+    
+            <!-- <a href="https://www.tecmundo.com.br/ciencia/228445-energia-solar-caixa-financiar-instalacao-paineis-residencias.htm" target="_blank">Leia mais...</a> -->
             <!-- postagem 4 -->
     
             <!-- postagem 5 -->
@@ -96,8 +241,30 @@
             <img src="imagens/celular-android.jpg" alt="Celular android aberto no menu">
     
             <p>O Google enviou, por engano, uma nova atualização completa do Android 12 para alguns celulares da linha Pixel nessa quarta-feira (10), levando os proprietários a baixar uma compilação de 1,8 GB. O pacote era praticamente idêntico ao já instalado nos dispositivos anteriormente.</p>
+        <section id="content">
+        <div class="btn func">Leia Mais</div>
+
+            <p class="box">De acordo com o site ArsTechnica, a atualização aparentemente seria destinada aos assinantes da Verizon, uma das principais operadoras dos Estados Unidos. O update contém um código adicional que facilita o funcionamento do smartphone na rede da prestadora, sendo essa a sua única diferença.</p>
+
+           <p class="box">Em circunstâncias normais, bastaria o envio de uma pequena quantidade de códigos referentes à rede da Verizon, resultando em uma compilação de tamanho muito menor à que foi disponibilizada via OTA (over-the-air). O próprio sistema móvel do Google possui uma ferramenta destinada ao envio de códigos alterados, intitulada atualização delta.</p>
+
+           <p class="box">Segundo o Android Central, os modelos Pixel 3, 4 e 5 foram afetados, com relatos do problema em vários países. Curiosamente, o Pixel 6 ficou de fora do alerta de atualização lançado pela companhia.</p>
+
+           <h3 class="box">"Ignore a atualização"</h3>
+
+           <p class="box">Quando o sistema de atualização automática começou a notificar os usuários sobre a chegada de uma nova compilação, com a mesma descrição do pacote original, muitos deles procuraram o Google em seu canal no Reddit. Algum tempo depois, a empresa respondeu às reclamações.</p>
+
+           <p class="box">"Lamentamos o alerta que você recebeu. Não se preocupe, resolvemos o problema e você pode desconsiderar a atualização", escreveu a empresa em resposta a um usuário da plataforma. Ou seja, os proprietários que receberam o alerta devem ignorá-lo.</p>
+
+           <p class="box">Em contato com o 9to5Google, a companhia informou que a instalação não causa nenhum impacto nos telefones atualizados anteriormente para o Android 12. Ela disse ainda que lançará uma nova compilação em breve, retornando o dispositivo para a configuração de rede correta da sua operadora.</p>
+        
+
+        </section>
+           
+
+            
     
-            <a href="https://www.tecmundo.com.br/software/228617-android-12-google-envia-atualizacao-engano-linha-pixel.htm" target="_blank">Leia mais...</a>
+            <!-- <a href="https://www.tecmundo.com.br/software/228617-android-12-google-envia-atualizacao-engano-linha-pixel.htm" target="_blank">Leia mais...</a> -->
             <!-- postagem 5 -->
         </div>
 
@@ -115,21 +282,21 @@
     <div class="conteudo-lateral">
    
     <!-- primeira caixa lateral -->
-    <h3>Postagens recentes</h3>
+    <h3 class="fundo-cinza">Postagens recentes</h3>
     <div class="postagem-lateral">
-        Como tudo no mundo, a tecnologia nos traz vantagens e desvantagens. Como podemos controlar os maus efeitos dos avanços tecnológicos? Continue lendo e descubra que é possível!
+      <p>Como tudo no mundo, a tecnologia nos traz vantagens e desvantagens. Como podemos controlar os maus efeitos dos avanços tecnológicos? Continue lendo e descubra que é possível!</p>
       <a href="https://www.iebschool.com/pt-br/blog/software-de-gestao/tecnologia/avancos-tecnologicos-vantagens-e-desvantagens/" target="_blank">Leia mais... </a>
     </div>
     <!-- primeira caixa lateral -->
 
     <!-- segunda caixa lateral -->
     <div class="postagem-lateral">
-        Operadora desiste de lote arrematado do 5G e é multada, segundo Anatel
+        <p>Operadora desiste de lote arrematado do 5G e é multada, segundo Anatel</p>
         <a href="https://www.tecmundo.com.br/mercado/228447-operadora-desiste-lote-arrematado-5g-multada-diz-anatel.htm" target="_blank">Leia mais...</a>
     </div>
     <!-- segunda caixa lateral -->
 
-    <h3>Categorias</h3>
+    <h3 class="fundo-cinza">Categorias</h3>
 
     <!-- terceira caixa lateral -->
     <div class="postagem-lateral2">
