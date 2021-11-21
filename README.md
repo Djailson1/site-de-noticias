@@ -1,5 +1,5 @@
 # site-de-noticias
-Criação de Site usando Html e CSS 
+Criação de Site usando Html,CSS e JavaScript(JQuery) 
 
 Página inicial:
 
